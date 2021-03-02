@@ -13,11 +13,6 @@ passport.use(new OneIDStrategy({
     clientID: ONEID_APP_ID,
     clientSecret: ONEID_APP_SECRET,
     refCode: ONEID_APP_REFCODE
-  },
-  function(accessToken, profile, cb) {
-    User.findOrCreate({ OneId: profile.id }, function (err, user) {
-      return cb(err, user);
-    });
   }
 ));
 ```
