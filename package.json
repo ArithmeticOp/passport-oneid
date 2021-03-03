@@ -1,11 +1,11 @@
 {
-  "name": "passport-oneid",
+  "name": "passport-oneid-inet",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "**Create Application**",
+  "main": "lib/index.js",
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "mine arithmeticop",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -15,5 +15,18 @@
     "passport": "^0.4.1",
     "passport-strategy": "^1.0.0",
     "restler": "^3.4.0"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArithmeticOp/passport-oneid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArithmeticOp/passport-oneid/issues"
+  },
+  "homepage": "https://github.com/ArithmeticOp/passport-oneid#readme"
 }
