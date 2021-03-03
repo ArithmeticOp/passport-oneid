@@ -59,6 +59,12 @@ app.post('/auth/oneid',
         res.redirect('/');
     });
 
+app.get('/auth/oneid',
+    passport.authenticate('oneid', { failureRedirect: '/login' }),
+    function (req, res) {
+        res.redirect('/');
+    });
+
 // GET /auth/oneid/return
 //   Use passport.authenticate() as route middleware to authenticate the
 //   request.  If authentication fails, the user will be redirected back to the
